@@ -29,13 +29,15 @@
     margin-left: 6em !important;
     margin-bottom: -1em !important;
 }
-/* .wi{
-    width: 20vw;
-} */
-/* .input{
-    padding: 9px 30px;
+.btne{
+    margin-left: 1em;
     border-radius: 20px;
-} */
+    width: 15vw;
+}
+.input1{
+    border-radius: 20px;
+    width: 30vw;
+}
 @media screen and (max-width: 600px){
     .svg{
         margin-left: 0 !important;
