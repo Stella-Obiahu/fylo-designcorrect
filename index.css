@@ -49,6 +49,7 @@ a{
     position: relative;
     padding-bottom: 220px;
 }
+
 .sign-up{
     display: flex;
     flex-direction: column;
@@ -69,6 +70,14 @@ a{
     margin-bottom: 36px;
     text-align: center;
 }
+.cta{
+    width: 280px;
+    padding: 20px 0px;
+    border-radius: 50px;
+    margin: 30px 0px;
+    background: linear-gradient(to right,var(--cyan),var(--blue));
+    border: none;
+}
 form{
     display: flex;
     align-content: center;
@@ -85,10 +94,10 @@ input[type = "email"]{
 }
 input[type = "submit"]{
     color: var(--white);
-    margin: 0;
-    background: var(--blue);
+    margin:0;
+    /* background: var(--blue);
     border-radius: 20px;
-    border: none;
+    border: none; */
 }
 ::placeholder{
     opacity: 0.4;
@@ -194,6 +203,46 @@ footer{
     z-index: -1;
 }
 @media screen and (max-width: 600px){
+    .hero{
+        background: var(--into-email-bg) url(/bg-curvy-mobile.svg) bottom no-repeat;  
+    }
+    .sign-up{
+        height: 50vh;
+        padding: 40px 25px;
+        bottom: -200px;
+    }
+    form{
+        flex-direction: column;
+    }
+    input[type="email"],
+    input[type="submit"]{
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-areas: "logo"
+        "location"
+        "contact"
+        "links"
+        "more-links"
+        "social-icons";
+    }
+    .social-icons i{
+        font-size: 28px;
+    }
+    .fa-facebook{
+        justify-self: end;
+    }
+    .fa-twitter{
+        justify-self: center;
+    }
+    .fa-instagram{
+        justify-self: start;
+    }
     .svg{
         margin-left: 0 !important;
     }
