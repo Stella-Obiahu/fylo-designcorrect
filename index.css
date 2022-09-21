@@ -207,6 +207,7 @@ footer{
         background: var(--into-email-bg) url(/bg-curvy-mobile.svg) bottom no-repeat;  
     }
     .sign-up{
+        margin-top: 1em;
         height: 50vh;
         padding: 40px 25px;
         bottom: -200px;
