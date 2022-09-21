@@ -1,9 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --into-email-bg:hsl(217, 28%, 15%);
+    --main-bg:hsl(218, 28%, 13%);
+    --footer-bg:hsl(216, 53%, 9%);
+    --testimonial-bg:hsl(219, 30%, 18%);
+    --cyan:hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red:hsl(0, 100%, 63%);
+    --white:hsl(0, 0%, 100%);
+}
+body{
+    font-family: "open Sans" sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    background: var(--main-bg);
+    color: var(--white);
+}
+h2,
+h3,
+nav,
+.cta{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+ul,
+li{
+    list-style: none;
+}
+h2{
+    font-size: 40px;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+.hero{
+    background: var(--into-email-bg) url(/bg-curvy-desktop.svg) bottom no-repeat;
+    background-size: 98% 250px;
+}
+.main{
+    position: relative;
+    padding-bottom: 220px;
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--into-email-bg);
+    padding: 50px 74px 40px 74px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -120px;
+}
+.sign-up h2{
+    margin-bottom: 30px;
+}
+.sign-up p{
+    margin-bottom: 36px;
+    text-align: center;
+}
+form{
+    display: flex;
+    align-content: center;
+}
+input[type = "email"]{
+    width: 482px;
+    height: 50px;
+    padding: 20px 47px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+input[type = "submit"]{
+    color: var(--white);
+    margin: 0;
+    background: var(--blue);
+    border-radius: 20px;
+    border: none;
+}
+::placeholder{
+    opacity: 0.4;
+}
+footer{
+    background: var(--footer-bg);
+    padding: 200px 80px 80px 100px;
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    column-gap: 70px;
+    grid-template-areas: "logo . . . ."
+    "location contact links more-links social-icons";
+}
+.footer-logo{
+    grid-area: logo;
+    margin-bottom: 35px;
+}
+.footer-location{
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+.footer-location span{
+    padding-left: 35px;
+}
+.footer-contact{
+    grid-area: contact;
+}
+.footer-contact p{
+    margin-bottom: 26px;
+}
+.footer-contact img{
+    margin-right: 24px;
+}
+.footer-links{
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-links a{
+    margin-bottom: 24px;
+}
+.footer-more-links{
+    grid-area: more-links;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-more-links a{
+    margin-bottom: 24px;
+}
+.social-icons{
+    grid-area: social-icons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social-icons i{
+    font-size: 30px;
+}
 .btnn1{
     border-radius: 18px;
    
-}
-.culor{
-    color: whitesmoke;
 }
 .step1{
     margin-top: 4em;
@@ -22,8 +169,7 @@
     margin-top: -3em;
 }
 .bgn{
-    background-color: #393c41;
-    color: whitesmoke;
+    background: var(--testimonial-bg);
 }
 .svg{
     margin-left: 6em !important;
@@ -36,10 +182,6 @@
 .input1{
     border-radius: 20px;
     
-}
-.pinky{
-    position: relative;
-    top: 3em;
 }
 .stella{
     position: relative;
