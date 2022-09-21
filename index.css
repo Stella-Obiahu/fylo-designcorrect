@@ -37,6 +37,20 @@
     border-radius: 20px;
     
 }
+.pinky{
+    position: relative;
+    top: 3em;
+}
+.stella{
+    position: relative;
+}
+.stella:first-child::before{
+    content: url("/bg-quotes.png");
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    z-index: -1;
+}
 @media screen and (max-width: 600px){
     .svg{
         margin-left: 0 !important;
